@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Empire Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameBlock">
+        <header class="topBlock">
+            <h1 class="title">Potato Map</h1>
+            <div class="seasonsBlock">
+                <div class="seasons">
+                    <div id="Spring">Spring: <span>0 points</span></div>
+                    <div id="Summer">Summer: <span>0 points</span></div>
+                    <div id="Autumn">Autumn: <span>0 points</span></div>
+                    <div id="Winter">Winter: <span>0 points</span></div>
+                </div>
+                <u><h3 class="totalPoints">Total: 0 points</h3></u>
+                <u><h3 id="Current">Current Season: Spring AB</h3></u>
+            </div>
+        </header>
+        <main class="flexBlock">
+            <section class="map">
+                <div class="grid"></div>
+            </section>
+            <section class="controls">
+                <div class="Missions">
+                    <div id="A" class="mission">
+                        <div id="mission-A-score" class="missionPoints">0 points</div>
+                    </div>
+                    <div id="B" class="mission">
+                        <div id="mission-B-score" class="missionPoints">0 points</div>
+                    </div>
+                    <div id="C" class="mission">
+                        <div id="mission-C-score" class="missionPoints">0 points</div>
+                    </div>
+                    <div id="D" class="mission">
+                        <div id="mission-D-score" class="missionPoints">0 points</div>
+                    </div>
+                </div>
+                <div class="time">
+                    <u><h3 id="elapsedTimeSeason">Elapsed time in current season: 0/7</h3></u>
+                    
+                </div>
+                <div class="currElemBlock">
+                    <u><h3>Current Element:</h3></u>
+                    <div class="side">
+                            <button id="rotate">Rotate</button>
+                            <button id="mirror">Mirror</button>
+                        <div class="elemDisplay">
+                            <div class="elemTimeBlock">
+                                <img src="assets/tiles/clock.png" alt="clock"/>
+                                <span id="elemTime"></span>
+                            </div>
+                        </div>
+                        <p id="elapsedTimeTotal">0/28</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="elements.js"></script>
+    <script src="missions.js"></script>
+    <script src="seasons.js"></script>
+    <script src="scores.js"></script>
+    <script src="grid.js"></script>
+</body>
+</html>

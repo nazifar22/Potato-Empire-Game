@@ -1,0 +1,207 @@
+* {
+    font-family: Literata, serif;
+}
+
+h3 {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("assets/tiles/theme.png");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+.topBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+    margin-top: -160px;
+}
+
+.title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 290px;
+    margin-top: 180px;
+    margin-left: 20px;
+}
+
+/* Seasons section */
+.seasonsBlock {
+    margin-right: 80px; 
+    margin-left: 470px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.seasons {
+    display: flex;
+    gap: 20px;
+}
+
+.totalPoints {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Individual season styles */
+#Spring, #Summer, #Autumn, #Winter {
+    margin-left: 10px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 15px;
+}
+
+#Spring { background-color: rgb(214, 178, 211); }
+#Summer { background-color: #faee80; }
+#Autumn { background-color: #eccb99; }
+#Winter { background-color: #93c4db; }
+
+/* Missions section */
+.Missions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-top: -120px;
+    margin-bottom: 20px;
+}
+
+.mission {
+    height: 120px; 
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mission-highlight {
+    border: 3px solid #00c3ff;
+    box-shadow: 0 0 10px #00c3ff;
+}
+
+.missionPoints {
+    position: absolute;
+    top: 100px; 
+    right: 10px; 
+    color: rgb(152, 211, 214);
+}
+
+/* Flex container and map */
+.flexBlock {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.map {
+    width: 600px;
+    height: 600px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: -220px;
+    align-content: center;
+    background: white;
+    padding: 2px;
+}
+
+.map-grid {
+    border-collapse: collapse;
+}
+
+.grid-cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background-size: cover;
+}
+
+/* Current element section */
+.currElemBlock {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+}
+p {color: #000000;}
+
+/* Element display */
+.elemDisplay {
+    margin: 20px;
+    width: 160px; 
+    height: 90px; 
+    background-color: #fafafa;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elemDisplay table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.elemDisplay td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-size: cover;
+}
+
+/* Hover styles */
+#rotate:hover, #mirror:hover {
+    background-color: #d4acac;
+}
+
+/* Buttons */
+#rotate, #mirror {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Highlight effect */
+.highlight {
+    outline: 2px solid #ff0000;
+    outline-offset: -1px;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Element time display */
+.elemTimeBlock {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.elemTimeBlock img {
+    width: 40px;
+    margin-right: 5px;
+}
